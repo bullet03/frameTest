@@ -5,7 +5,7 @@
   <title>Title</title>
 </head>
 <body>
-
+<div style="height: 2000px">hfhg</div>
 <textarea name="someName" id="textareaId" cols="30" rows="10" class="inputClass">Some Text And more text and another text
 </textarea>
 
@@ -13,8 +13,8 @@
   const inputEl = document.querySelector(".inputClass");
   setTimeout(function() {
     console.log('4 sec passed');
-    inputEl.focus();
-  }, 4000)
+    inputEl.focus({preventScroll: true});
+  }, 1000)
 </script>
 
 </body>
