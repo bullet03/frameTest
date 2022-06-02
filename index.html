@@ -6,14 +6,13 @@
 </head>
 <body>
 
-<input type="text" name="someName" class="inputClass">
-<button>Click me</button>
+<textarea name="someName" id="textareaId" cols="30" rows="10" class="inputClass">Some Text And more text and another text
+</textarea>
 
 <script>
-  console.log(`Hi`);
   const inputEl = document.querySelector(".inputClass");
   setTimeout(function() {
-    console.log('2 sec passed');
+    console.log('4 sec passed');
     inputEl.focus();
   }, 4000)
 </script>
